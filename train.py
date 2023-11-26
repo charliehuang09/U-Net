@@ -31,6 +31,4 @@ if __name__ == "__main__":
             max_epochs=250,
             precision=32,
         )
-        lr_finder = trainer.lr_find(model)
-        print(new_lr = lr_finder.suggestion())
-        # trainer.fit(model, dataLoader)
+        trainer.fit(model, dataLoader)
